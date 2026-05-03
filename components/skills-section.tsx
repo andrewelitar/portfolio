@@ -22,10 +22,10 @@ const skillCategories = [
 ]
 
 const certifications = [
-  "AWS Certified Cloud Practitioner",
-  "IELTS Band 6",
-  "JFT-Basic (Score 222)",
-]
+  {title: "AWS Certified Cloud Practitioner", url: "https://drive.google.com/file/d/1Qcwxzwv4gTukZ-XWNOBu8-9xVssBqhNT/view?usp=sharing"},
+  {title: "IELTS Band 6", url: "https://drive.google.com/file/d/1m1rv5BruZrsw-z52A6JtV_4o56UMf1kc/view?usp=sharing"},
+  {title: "JFT-Basic (Score 222)", url: "https://drive.google.com/file/d/1TyL9-XeUlx9sMrj9-NGxxZDtnWf54RKL/view?usp=sharing"},
+  ]
 
 export function SkillsSection() {
   return (
@@ -66,12 +66,12 @@ export function SkillsSection() {
 
           <div className="flex flex-wrap gap-4">
             {certifications.map((cert, index) => (
-              <div 
+              <a href = {cert?.url}
                 key={index} 
                 className="px-5 py-3 rounded-lg bg-card/60 backdrop-blur-md border border-border/40 hover:border-accent/50 transition-colors"
               >
-                <span className="text-foreground font-medium">{cert}</span>
-              </div>
+                <span className="text-foreground font-medium">{cert?.title}</span>
+              </a>
             ))}
           </div>
         </div>
