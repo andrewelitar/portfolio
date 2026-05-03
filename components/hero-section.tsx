@@ -29,7 +29,7 @@ export function HeroSection() {
           </div>
           <div className="flex items-center gap-2">
             <Phone className="w-4 h-4 text-primary" />
-            <span>+62 822-4627-4577</span>
+            <a href="https://wa.me/+6282246274577">+62 822-4627-4577</a>
           </div>
           <a 
             href="mailto:andrewetarigan@gmail.com" 
