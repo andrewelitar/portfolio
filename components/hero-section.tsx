@@ -12,7 +12,7 @@ export function HeroSection() {
         </div>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-6 font-medium">
-          Software Engineer & Cloud Specialist
+          Software Engineer & Cloud Engineer
         </p>
         
         <p className="text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
